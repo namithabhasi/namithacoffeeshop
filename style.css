@@ -1,0 +1,247 @@
+*{
+    padding: 0px;
+    margin: 0px;
+ 
+  font-family: "Old Standard TT", serif;
+}
+#top{
+    width: 100%;
+    height: 40px;
+    background-color:	#4B3832;
+    color: #f7f1ee;
+}
+h4{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+h4:hover{
+    color:wheat
+}
+header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(12, 1, 1);
+    padding: 5px;
+    color: white;
+  
+}
+header i{
+    padding:20px;
+}
+header img {
+    padding:20px;
+}
+#image{
+    height: 100vh;
+    background-image: url(https://images.pexels.com/photos/11209963/pexels-photo-11209963.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  
+    
+    
+}  
+
+
+#image h1{
+    position: absolute;
+    color: white;
+    top:40%;
+    left: 65%;
+    font-family: "Dancing Script", cursive;
+    font-size: xx-large; 
+    font-weight: 900px;
+    text-shadow: 4px,5px,8px,rgb(19, 2, 2);
+  
+    /* width: 400px;     /* or whatever size you like */
+  /* height: 100%;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); */
+  /* object-fit: cover; */ */
+
+    
+}
+
+.row{
+    height: 600px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  background-color: rgb(12, 1, 1);
+  color: black;
+ 
+
+}
+.col{
+    width:250px;
+    height: 400px;
+   background-color: #f7f1ee;
+ 
+    color: black;
+    text-align: center;
+    transition: transform 1s ease;
+    border: 8px double rgba(165, 42, 42, 0.123);
+   
+   
+
+    
+}
+
+.col img{
+    width:300px;
+    height:300px;
+    object-fit: cover;
+   
+          
+    
+}
+.love{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: medium;
+    margin: 5px;
+    
+}
+input{
+    padding:10px;
+ 
+}
+ul li{
+ margin: 10px;
+}
+footer{
+    height: 400px;
+}
+.row1{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    padding: 50px;
+}
+.col2{
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #4B3832;;
+}
+.col2 input{
+margin : 5px;
+
+}
+.col3{
+    margin-bottom: 40px;
+   
+}
+.col:hover{
+    transform: translateY(50px);
+}
+
+#a:hover{
+    transform: translate(90px);
+    opacity: 2;
+}
+#b:hover{
+    transform: scale(1.2);
+}
+#c:hover{
+    transform: rotate(270deg);
+}
+#e:hover{
+    transform: skew(2px);
+}
+
+.full{
+    display: flex;
+    
+ 
+ height: 100vh;
+   padding: 30px;
+}
+.rownew{
+  
+    width: 800px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4B3832;
+    margin-top: 50px;
+    background-image: url(https://i.pinimg.com/736x/0a/79/28/0a79283771f7616c2f8c9b7a3e93859a.jpg);
+   
+}
+.coln{
+    width:500px;
+    height: 200px;
+    border: 2px solid rgba(255, 0, 0, 0.137);
+     margin: 20px;
+     border-radius: 15px;
+     box-shadow: 5px,10px,10px gray;
+  
+}
+
+.col img{
+    object-fit: cover;
+    object-position: center;
+   max-width: 100%;
+}
+
+
+.right{
+ width: 500px;
+ height: 500px;
+
+margin-left: 140px;
+top: 0%;
+}
+.para h3{
+    font-family: 'Pacifico', cursive;
+}
+.next h1 {
+     /* background-color: #4B3832; */
+     color:white;
+     font-family: 'Pacifico', cursive;
+     transition: transform .3s ease-in-out;
+   
+ 
+  
+}
+.next{
+    
+    background-color: black;
+    color: white;
+     
+}
+
+.next h1:hover{
+  transform: translateX(50PX);
+  
+}
+.right img{
+      transition: transform 2s ease-in-out;
+}
+
+.right img:hover{
+    transform:  translateY(100px);
+}
+
+.banner{
+    background-image: url(https://cdn.dribbble.com/userupload/20519282/file/original-22795ca9f97e43d493acc8f76631d645.gif);
+   
+    background-repeat: no-repeat;
+ background-attachment: fixed;
+ 
+    width: 100%;
+    height: 900px;
+  background-position: center;
+  background-color: #4B3832;
+  
+}
