@@ -2,7 +2,7 @@
     padding: 0px;
     margin: 0px;
  
-  font-family: "Old Standard TT", serif;
+font-family: 'Pacifico', cursive;
 }
 #top{
     width: 100%;
@@ -244,4 +244,548 @@ top: 0%;
   background-position: center;
   background-color: #4B3832;
   
+}
+
+.main_back {
+  position: absolute;
+  border-radius: 10px;
+  transform: rotate(90deg);
+  width: 11em;
+  height: 11em;
+  background: linear-gradient(270deg, #03a9f4, #cc39a4, #ffb5d2);
+  z-index: -2;
+  box-shadow: inset 0px 0px 180px 5px #ffffff;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 14em;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-top-left-radius: 10px;
+  background: lightgrey;
+  transition: 0.4s ease-in-out, 0.2s background-color ease-in-out,
+    0.2s background-image ease-in-out;
+  background: rgba(255, 255, 255, 0.596);
+  backdrop-filter: blur(5px);
+  border: 1px solid transparent;
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.card .instagram {
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  fill: #cc39a4;
+}
+
+.card:nth-child(2) {
+  border-radius: 0px;
+}
+
+.card:nth-child(2) .twitter {
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  fill: #03a9f4;
+}
+
+.card:nth-child(3) {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 0px;
+}
+
+.card:nth-child(3) .dribble {
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  fill: #ffb5d2;
+}
+
+.card:nth-child(4) {
+  border-radius: 0px;
+}
+
+.card:nth-child(4) .codepen {
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  fill: black;
+}
+
+.card:nth-child(5) {
+  border-radius: 0px;
+}
+
+.card:nth-child(5) .uiverse {
+  position: absolute;
+  margin-left: 0.2em;
+  margin-top: 0.2em;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+
+.card:nth-child(6) {
+  border-radius: 0px;
+}
+
+.card:nth-child(6) .discord {
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  fill: #8c9eff;
+}
+
+.card:nth-child(7) {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 0px;
+}
+
+.card:nth-child(7) .github {
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  fill: black;
+}
+
+.card:nth-child(8) {
+  border-radius: 0px;
+}
+
+.card:nth-child(8) .telegram {
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  fill: #29b6f6;
+}
+
+.card:nth-child(9) {
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 0px;
+}
+
+.card:nth-child(9) .reddit {
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+
+.main:hover {
+  width: 14em;
+  cursor: pointer;
+}
+
+.main:hover .main_back {
+  opacity: 0;
+}
+
+.main:hover .card {
+  margin: 0.2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+
+.round{
+    width: 100px;
+    height: 100px;
+
+
+border-radius: 50px;
+
+box-shadow:  39px 39px 78px rgba(165, 42, 42, 0.123);,
+             -39px -39px 78px rgba(165, 42, 42, 0.123);;
+}
+.colo{
+   margin: 30px; 
+ 
+}
+/* From Uiverse.io by gharsh11032000 */ 
+.button {
+  position: relative;
+  background-color: transparent;
+  color: white;
+  font-size: 17px;
+  
+  border-radius: 10px;
+  width: 150px;
+  height: 30px;
+  border: none;
+ 
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(51, 51, 51, 0.2);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button::before {
+  content: "Thank you";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(135deg,#1c0303c7,#3e0101 );
+  transform: translate(0%,90%);
+  z-index: 99;
+  position: relative;
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button::after {
+  content: "submit";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0a0000;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transform-origin: top;
+  transform: translate(0%,-100%);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button:hover::before {
+  transform: translate(0%,0%);
+}
+
+.button:hover::after {
+  transform: translate(0%,-200%);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:active {
+  scale: 0.95;
+}
+
+
+/* From Uiverse.io by gharsh11032000 */ 
+.button1 {
+  position: relative;
+  background-color: transparent;
+  color: #e8e8e8;
+  font-size: 12px;
+  font-weight: 200;
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(44, 6, 6, 0.2);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  font-family: 'Rubik Bubbles', cursive;
+}
+
+.button1::before {
+  content: "Welcome";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(135deg,#240709,#290204 );
+  transform: translate(0%,90%);
+  z-index: 99;
+  position: relative;
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button1::after {
+  content: "Log on";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transform-origin: top;
+  transform: translate(0%,-100%);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button1:hover::before {
+  transform: translate(0%,0%);
+}
+
+.button1:hover::after {
+  transform: translate(0%,-200%);
+}
+
+.button1:focus {
+  outline: none;
+}
+
+.button1:active {
+  scale: 0.95;
+}
+
+
+/* From Uiverse.io by Ans453 */ 
+.card {
+  width: 100px;
+  height: 100px;
+  background: rgb(45, 45, 45);
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.card:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+  background: rgb(0, 0, 0);
+}
+
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 15px;
+}
+
+.card:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  font-size: 0px;
+  transform: rotate(90deg) scale(-1);
+}
+
+.card:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 1.8rem;
+  transform: rotate(0deg);
+}
+/* .aboutme{
+    width: 100%;
+    height: 100vh;
+} */
+
+
+.banner1{
+    background-image: url(https://i.pinimg.com/originals/88/6d/a6/886da6e9ff150994d3274ecc94caefff.gif);
+   
+    background-repeat: no-repeat;
+ background-attachment: fixed;
+ 
+ 
+    width: 100%;
+    height: 900px;
+  background-position: center;
+  background-color: #4B3832;
+  
+}
+.testimonials-full {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff8f0;
+    font-family: 'Work Sans', sans-serif;
+    padding: 30px 3%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimonial-heading {
+    font-size: 2.2rem;
+    font-family: 'Rubik Bubbles', cursive;
+    color: #5c4033;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 18px;
+    flex-grow: 1;
+  }
+
+  /* Classic testimonial card styles */
+  .testimonial-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 0.9rem;
+  }
+
+  .testimonial-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  }
+
+  .testimonial-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  .testimonial-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #5c4033;
+    margin-bottom: 8px;
+  }
+
+  .testimonial-card p {
+    font-size: 0.85rem;
+    color: #444;
+    line-height: 1.4;
+  }
+
+  /* Uiverse Card styles - smaller */
+  .card {
+    position: relative;
+    width: 220px;
+    height: 140px;
+    background: black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+
+  .card svg {
+    width: 36px;
+    fill: #333;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+
+  .card:hover {
+    transform: rotate(-5deg) scale(1.05);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  }
+
+  .card__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow-y: auto;
+    font-size: 0.85rem;
+  }
+
+  .card:hover .card__content {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+  }
+
+  .card__title {
+    margin: 0;
+    font-size: 18px;
+    color: #5c4033;
+    font-weight: 700;
+  }
+
+  .card__description {
+    margin: 8px 0 0;
+    font-size: 13px;
+    color: #777;
+    line-height: 1.3;
+  }
+
+  .card:hover svg {
+    scale: 0;
+    transform: rotate(-45deg);
+  }
+
+  /* Responsive tweaks */
+  @media (max-width: 400px) {
+    .card {
+      width: 100%;
+      height: 180px;
+    }
+    .testimonial-card {
+      padding: 12px;
+    }
+  }
+
+.follow-us-banner {
+  text-align: center;
+  padding: 20px 10px;
+  background: #100900;
+  color: white;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 30px 0 10px;
+  border-radius: 8px;
+}
+
+.follow-us-banner .social-icons {
+  /* margin-top: 10px; */
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.follow-us-banner .social-icons a {
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.follow-us-banner .social-icons a:hover {
+  color: #ff0f7b;
+}
+@media only screen and (max-width: 768px) {
+    .testimonial-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
 }
