@@ -397,14 +397,14 @@ top: 0%;
 
 border-radius: 50px;
 
-box-shadow:  39px 39px 78px rgba(165, 42, 42, 0.123);,
+box-shadow:  39px 39px 78px rgba(165, 42, 42, 0.123);;
              -39px -39px 78px rgba(165, 42, 42, 0.123);;
 }
 .colo{
    margin: 30px; 
  
 }
-/* From Uiverse.io by gharsh11032000 */ 
+
 .button {
   position: relative;
   background-color: transparent;
@@ -469,7 +469,6 @@ box-shadow:  39px 39px 78px rgba(165, 42, 42, 0.123);,
 }
 
 
-/* From Uiverse.io by gharsh11032000 */ 
 .button1 {
   position: relative;
   background-color: transparent;
@@ -535,7 +534,7 @@ box-shadow:  39px 39px 78px rgba(165, 42, 42, 0.123);,
 }
 
 
-/* From Uiverse.io by Ans453 */ 
+
 .card {
   width: 100px;
   height: 100px;
@@ -636,7 +635,6 @@ box-shadow:  39px 39px 78px rgba(165, 42, 42, 0.123);,
     flex-grow: 1;
   }
 
-  /* Classic testimonial card styles */
   .testimonial-card {
     background: white;
     border-radius: 10px;
@@ -740,7 +738,7 @@ box-shadow:  39px 39px 78px rgba(165, 42, 42, 0.123);,
     transform: rotate(-45deg);
   }
 
-  /* Responsive tweaks */
+  
   @media (max-width: 400px) {
     .card {
       width: 100%;
